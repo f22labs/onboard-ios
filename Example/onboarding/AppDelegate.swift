@@ -7,18 +7,42 @@
 //
 
 import UIKit
+import onboarding
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate,F22InstructorSceneProtocol {
 
     var window: UIWindow?
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        if(self.window == nil) {
+            self.window = UIWindow()
+        }
+        var dictionary = [Dictionary<String,String>]()
+           dictionary = [["image":"illustrationScreen-1",
+         "title":"SIMPLE ABROAD CALLS",
+         "subTitle":"Wonep converts international calls to local calls"],
+         ["image":"illustrationScreen-2",
+         "title":"FREE WONEP TO WONEP",
+         "subTitle":"if the person you're calling also has Wonep the call will be entirely free"],
+         ["image":"iIllustrationScreen-3",
+         "title":"NO HIDDEN CHARGES OR FEES",
+         "subTitle":"We have a very small charge for non-Wonep calls to mobiles or landlines"]]
+        
+        let loginViewController = LoginViewController()
+        
+        let instructorVC = F22InstructorScene.init(inputViews: dictionary, nextViewController:loginViewController,hideStatusBar:true)
+        
+        let navigationController = UINavigationController.init(rootViewController: instructorVC)
+        self.window?.backgroundColor = .white
+        self.window?.rootViewController = navigationController
+        navigationController.setNavigationBarHidden(true, animated: false)
+        self.window?.makeKeyAndVisible()
         return true
     }
-
+    
+  
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
@@ -41,6 +65,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
+    
+    //MARK:: F22InstructorSceneProtocol functions
+    func didFinishInstructions() {}
 
 }
 
