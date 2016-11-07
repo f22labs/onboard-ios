@@ -35,12 +35,14 @@ class OnBoardingView: UIView,UIScrollViewDelegate {
         fatalError("init(coder:) has not been implemented")
     }
     
+    @available(iOS 8.2, *)
     convenience init(frame:CGRect, inputViews:[[String:String]]) {
         self.init(frame:frame)
         self.dataSource = inputViews
         self.createViews()
     }
     
+    @available(iOS 8.2, *)
     private func createViews() {
         self.backgroundColor = .white
         

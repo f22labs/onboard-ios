@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import onboarding
 
 class ViewController: UIViewController,onBoardingViewProtocol {
 
