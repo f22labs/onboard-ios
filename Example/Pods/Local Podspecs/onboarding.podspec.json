@@ -1,0 +1,22 @@
+{
+  "name": "onboarding",
+  "version": "0.1.0",
+  "summary": "A short description of onboarding.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/onboarding",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "ranjithatF22Labs": "ranjith@f22labs.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/onboarding.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "onboarding/Classes/**/*"
+}
