@@ -1,8 +1,8 @@
 {
   "name": "onboarding",
   "version": "0.1.0",
-  "summary": "Displaying an Instructor pages when first time users enter into your Application",
-  "description": "TODO: Add long description of the pod here.",
+  "summary": "Displaying an Instructor pages when first time users enter into your Application.",
+  "description": "Displaying an Instructor pages when first time users enter into your Application. It will give some basic idea of our Applicaton Flow",
   "homepage": "https://github.com/f22labs/onboard-ios",
   "license": {
     "type": "MIT",
@@ -12,7 +12,7 @@
     "ranjith": "ranjith@f22labs.com"
   },
   "source": {
-    "git": "https://github.com/<GITHUB_USERNAME>/onboarding.git",
+    "git": "https://github.com/f22labs/onboard-ios.git",
     "tag": "0.1.0"
   },
   "platforms": {

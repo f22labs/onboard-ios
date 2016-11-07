@@ -8,15 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		0126250DA67C867089B776316A681E0C /* Pods-onboarding_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B759F2E96F87BB744D1F7DB5B62D92BE /* Pods-onboarding_Tests-dummy.m */; };
-		15075A6CE4A8AE4D0BED6634904859CB /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520736EB92A5CA9100402F0C401F3983 /* ReplaceMe.swift */; };
+		0FFE0C35ACEF3FF1C73B4E444D138658 /* Color+CustomColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0787BFD46FE7F02B45E7312EA12F53A /* Color+CustomColor.swift */; };
 		1F6DD55680890F7C3F29C9C5016ADF66 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
 		572EC45D9984AA85673B7FD116ADF5AB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		72C642DE87423594B57864A68613D9B2 /* onboarding-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 048DD4319F60D0C80A041AE16227D298 /* onboarding-dummy.m */; };
+		7A0A54725A7E0A351ADA28865452D3B3 /* OnBoardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D156903A6863820FEABBDF8557D44DDC /* OnBoardingView.swift */; };
 		7C881B0A83B84D0F89C96B4752F46BC0 /* Pods-onboarding_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 38462852661753723AC69C61C3A8A5F6 /* Pods-onboarding_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8839C57F839617F2A494DC29CDEB1498 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		9C45C3AB886BC559A281709983868071 /* onboarding-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 20D737E8A8677FB67C4B0767F1E95F3C /* onboarding-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A8E76857A9DDBCFA7DB7B2B27C52457B /* Pods-onboarding_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 09788BF4D97108AEB20C6C031C998407 /* Pods-onboarding_Example-dummy.m */; };
 		C1099C9268136BD2874CC4EE83ED29A8 /* Pods-onboarding_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D163E3D0FD4B0894F700EDDB6FF1A762 /* Pods-onboarding_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D11B6C50C861F24000471B2E35A8B751 /* onboarding-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 048DD4319F60D0C80A041AE16227D298 /* onboarding-dummy.m */; };
+		DB1A5BD6ABC3489E4444890A7B5C4135 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BA99683FFD8476E4B0F1926192B2F6 /* ReplaceMe.swift */; };
+		DE7813670AB3D297A6E34DDEAB9CB7D1 /* onboarding-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 20D737E8A8677FB67C4B0767F1E95F3C /* onboarding-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ED6348347FC63482DDF3840935C7B032 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,12 +26,13 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = AF4A247A9D4DCCFD045430346773D7F7;
+			remoteGlobalIDString = 1F0ABF068B5A8D7563572BA145A36895;
 			remoteInfo = onboarding;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		02BA99683FFD8476E4B0F1926192B2F6 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReplaceMe.swift; sourceTree = "<group>"; };
 		048DD4319F60D0C80A041AE16227D298 /* onboarding-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "onboarding-dummy.m"; sourceTree = "<group>"; };
 		09788BF4D97108AEB20C6C031C998407 /* Pods-onboarding_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-onboarding_Example-dummy.m"; sourceTree = "<group>"; };
 		131A65031F2081AC6A36DDF6B2598B43 /* Pods-onboarding_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-onboarding_Example-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -38,7 +41,6 @@
 		38462852661753723AC69C61C3A8A5F6 /* Pods-onboarding_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-onboarding_Example-umbrella.h"; sourceTree = "<group>"; };
 		384E7A136D3B01CF2A4F4631B4BA9D0C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		486498CD05634CF7B799027EF91FAC09 /* Pods-onboarding_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-onboarding_Tests.modulemap"; sourceTree = "<group>"; };
-		520736EB92A5CA9100402F0C401F3983 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReplaceMe.swift; sourceTree = "<group>"; };
 		61FBA7F28DCCDE706D85A9A26CA2D5F0 /* Pods-onboarding_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-onboarding_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		6515A6397D5D8FDE3C6529F4C9721A5C /* onboarding-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "onboarding-prefix.pch"; sourceTree = "<group>"; };
 		6CE4ADD1C19A403E77CF0F87B1A55060 /* Pods-onboarding_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-onboarding_Tests-resources.sh"; sourceTree = "<group>"; };
@@ -48,12 +50,14 @@
 		8995AA7D3D2D5F19ABC9E3F9B6461175 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		96B9D654511E69AC78E006227C986681 /* Pods-onboarding_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-onboarding_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		A0787BFD46FE7F02B45E7312EA12F53A /* Color+CustomColor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Color+CustomColor.swift"; sourceTree = "<group>"; };
 		A531884B8306BC8421F5C65B939EBC75 /* onboarding.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = onboarding.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B759F2E96F87BB744D1F7DB5B62D92BE /* Pods-onboarding_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-onboarding_Tests-dummy.m"; sourceTree = "<group>"; };
 		B86F60A1D32D0C74FC3841FCD661BEE7 /* Pods-onboarding_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-onboarding_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		BAB68851E8A1C644AF55E3B5542B4770 /* Pods_onboarding_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_onboarding_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB05485722313E67F848740524D498B5 /* Pods-onboarding_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-onboarding_Example.modulemap"; sourceTree = "<group>"; };
 		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D156903A6863820FEABBDF8557D44DDC /* OnBoardingView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OnBoardingView.swift; sourceTree = "<group>"; };
 		D163E3D0FD4B0894F700EDDB6FF1A762 /* Pods-onboarding_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-onboarding_Tests-umbrella.h"; sourceTree = "<group>"; };
 		D93380417C3B7BE185301625EF968F75 /* Pods-onboarding_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-onboarding_Example.release.xcconfig"; sourceTree = "<group>"; };
 		DC6FE07B982360D873C981A88D9709D5 /* onboarding.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = onboarding.modulemap; sourceTree = "<group>"; };
@@ -65,11 +69,11 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		1853CEB0E5EA4D810699FCBD465E8212 /* Frameworks */ = {
+		72FA5942EBCEB25D3FD4D79DFD6B80EF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8839C57F839617F2A494DC29CDEB1498 /* Foundation.framework in Frameworks */,
+				ED6348347FC63482DDF3840935C7B032 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,7 +113,7 @@
 		2EC6A0F530C2C506549E11DA11EFDA69 /* onboarding */ = {
 			isa = PBXGroup;
 			children = (
-				C1A95E436604745CA47AB8C60CB01044 /* onboarding */,
+				F95F3B05C744301EE3952FBC06259CB4 /* onboarding */,
 				1FBAA40CC4E29B2F0EE94EAE8877FCE4 /* Support Files */,
 			);
 			name = onboarding;
@@ -190,6 +194,16 @@
 			path = "Target Support Files/Pods-onboarding_Example";
 			sourceTree = "<group>";
 		};
+		91F18FA12207509769A01B944E8F19A3 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				A0787BFD46FE7F02B45E7312EA12F53A /* Color+CustomColor.swift */,
+				D156903A6863820FEABBDF8557D44DDC /* OnBoardingView.swift */,
+				02BA99683FFD8476E4B0F1926192B2F6 /* ReplaceMe.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
 		BAE059FC8EDA5489537B1284EEA0B061 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -206,20 +220,12 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		C1A95E436604745CA47AB8C60CB01044 /* onboarding */ = {
+		F95F3B05C744301EE3952FBC06259CB4 /* onboarding */ = {
 			isa = PBXGroup;
 			children = (
-				F4553A1FA2584492B8DBB47F1DD304E5 /* Classes */,
+				91F18FA12207509769A01B944E8F19A3 /* Classes */,
 			);
 			path = onboarding;
-			sourceTree = "<group>";
-		};
-		F4553A1FA2584492B8DBB47F1DD304E5 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				520736EB92A5CA9100402F0C401F3983 /* ReplaceMe.swift */,
-			);
-			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,11 +239,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F70154D98BC055668895F49C1A3C6B19 /* Headers */ = {
+		E50196AA32F42A70AF46158AE770D13A /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9C45C3AB886BC559A281709983868071 /* onboarding-umbrella.h in Headers */,
+				DE7813670AB3D297A6E34DDEAB9CB7D1 /* onboarding-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,13 +258,13 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		AF4A247A9D4DCCFD045430346773D7F7 /* onboarding */ = {
+		1F0ABF068B5A8D7563572BA145A36895 /* onboarding */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E2AEB919ACA84BB88099A6B82F18E731 /* Build configuration list for PBXNativeTarget "onboarding" */;
+			buildConfigurationList = 66B46BC4D06BED2DE598CCEF56FC05E1 /* Build configuration list for PBXNativeTarget "onboarding" */;
 			buildPhases = (
-				CD62459A5155C0F63BBE6965F37BDCA5 /* Sources */,
-				1853CEB0E5EA4D810699FCBD465E8212 /* Frameworks */,
-				F70154D98BC055668895F49C1A3C6B19 /* Headers */,
+				105071ED0357C707C2B2D7BF1E30835E /* Sources */,
+				72FA5942EBCEB25D3FD4D79DFD6B80EF /* Frameworks */,
+				E50196AA32F42A70AF46158AE770D13A /* Headers */,
 			);
 			buildRules = (
 			);
@@ -325,7 +331,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AF4A247A9D4DCCFD045430346773D7F7 /* onboarding */,
+				1F0ABF068B5A8D7563572BA145A36895 /* onboarding */,
 				DB7F448F1E7E40EC529DE2D4B4237AF2 /* Pods-onboarding_Example */,
 				C784ECA94EEE0314EAB424AF3EC30CA1 /* Pods-onboarding_Tests */,
 			);
@@ -333,20 +339,22 @@
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		105071ED0357C707C2B2D7BF1E30835E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FFE0C35ACEF3FF1C73B4E444D138658 /* Color+CustomColor.swift in Sources */,
+				D11B6C50C861F24000471B2E35A8B751 /* onboarding-dummy.m in Sources */,
+				7A0A54725A7E0A351ADA28865452D3B3 /* OnBoardingView.swift in Sources */,
+				DB1A5BD6ABC3489E4444890A7B5C4135 /* ReplaceMe.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C95C10EAA65B75355299996CD8FA6208 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				0126250DA67C867089B776316A681E0C /* Pods-onboarding_Tests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CD62459A5155C0F63BBE6965F37BDCA5 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				72C642DE87423594B57864A68613D9B2 /* onboarding-dummy.m in Sources */,
-				15075A6CE4A8AE4D0BED6634904859CB /* ReplaceMe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,12 +372,44 @@
 		3B9BECB67D29C6C9CC95C5FD9E0B0DE3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = onboarding;
-			target = AF4A247A9D4DCCFD045430346773D7F7 /* onboarding */;
+			target = 1F0ABF068B5A8D7563572BA145A36895 /* onboarding */;
 			targetProxy = 47F6C5F90237885CC2A2104721C239B6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		103EBA0CA584C1DD095A7B551675B578 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75A4CB03502FA624946998C4AE6DFAD8 /* onboarding.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/onboarding/onboarding-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/onboarding/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/onboarding/onboarding.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = onboarding;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		10DA7193B3C5659D069DF6BD78F442FC /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DEE78BB7ED38F1427437F8BB54C99CD5 /* Pods-onboarding_Tests.release.xcconfig */;
@@ -435,71 +475,6 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		47148817BC070C647D8ED76E3B6ADBFC /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 75A4CB03502FA624946998C4AE6DFAD8 /* onboarding.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/onboarding/onboarding-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/onboarding/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/onboarding/onboarding.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = onboarding;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		6A302FEA9AC84FB20D7CDB19CE95BABD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 75A4CB03502FA624946998C4AE6DFAD8 /* onboarding.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/onboarding/onboarding-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/onboarding/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/onboarding/onboarding.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = onboarding;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -660,6 +635,39 @@
 			};
 			name = Debug;
 		};
+		E59D151CCE8474C8E35B02A9D00D5A9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75A4CB03502FA624946998C4AE6DFAD8 /* onboarding.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/onboarding/onboarding-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/onboarding/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/onboarding/onboarding.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = onboarding;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -681,11 +689,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E2AEB919ACA84BB88099A6B82F18E731 /* Build configuration list for PBXNativeTarget "onboarding" */ = {
+		66B46BC4D06BED2DE598CCEF56FC05E1 /* Build configuration list for PBXNativeTarget "onboarding" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6A302FEA9AC84FB20D7CDB19CE95BABD /* Debug */,
-				47148817BC070C647D8ED76E3B6ADBFC /* Release */,
+				E59D151CCE8474C8E35B02A9D00D5A9A /* Debug */,
+				103EBA0CA584C1DD095A7B551675B578 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
