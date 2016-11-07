@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'onboarding_Example' do
+  pod 'onboarding', :path => '../'
+
+  target 'onboarding_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
