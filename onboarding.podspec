@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'onboarding'
   s.version          = '0.1.0'
-  s.summary          = 'Displaying an Instructor page on PreLogin Scenario'
+  s.summary          = 'Displaying an Instructor pages when first time users enter into your Application'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -24,7 +24,7 @@ TODO: Add long description of the pod here.
   s.homepage         = 'https://github.com/f22labs/onboard-ios'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'ranjithatF22Labs' => 'ranjith@f22labs.com' }
+  s.author           = { 'ranjith' => 'ranjith@f22labs.com' }
   s.source           = { :git => 'https://github.com/<GITHUB_USERNAME>/onboarding.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
