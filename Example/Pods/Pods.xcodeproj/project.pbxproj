@@ -8,15 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		0126250DA67C867089B776316A681E0C /* Pods-onboarding_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B759F2E96F87BB744D1F7DB5B62D92BE /* Pods-onboarding_Tests-dummy.m */; };
-		07C8ECE31DD09E8E00E2C2A0 /* UIFOnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C8ECE21DD09E8E00E2C2A0 /* UIFOnboardingViewController.swift */; };
-		0FFE0C35ACEF3FF1C73B4E444D138658 /* Color+CustomColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0787BFD46FE7F02B45E7312EA12F53A /* Color+CustomColor.swift */; };
 		1F6DD55680890F7C3F29C9C5016ADF66 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
 		572EC45D9984AA85673B7FD116ADF5AB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		7A0A54725A7E0A351ADA28865452D3B3 /* UIFOnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D156903A6863820FEABBDF8557D44DDC /* UIFOnboardingView.swift */; };
 		7C881B0A83B84D0F89C96B4752F46BC0 /* Pods-onboarding_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 38462852661753723AC69C61C3A8A5F6 /* Pods-onboarding_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		88DEF835BF74166441F6408F9831C8CC /* UIFOnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4BFFC4239A53510F90EEB530C73C29 /* UIFOnboardingView.swift */; };
+		8F42269DC0EABCA89952148C322678D7 /* Color+CustomColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB3719776F8EED7FFE1D68CA68FA1A8 /* Color+CustomColor.swift */; };
+		92FC0B970CEC726D80C4D6A02B6B7F87 /* UIFOnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400DC7D193FB8FC82E082839E9F4C43D /* UIFOnboardingViewController.swift */; };
+		9A022E5BBFA5C04A2AE858616548CF86 /* onboarding-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 048DD4319F60D0C80A041AE16227D298 /* onboarding-dummy.m */; };
 		A8E76857A9DDBCFA7DB7B2B27C52457B /* Pods-onboarding_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 09788BF4D97108AEB20C6C031C998407 /* Pods-onboarding_Example-dummy.m */; };
 		C1099C9268136BD2874CC4EE83ED29A8 /* Pods-onboarding_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D163E3D0FD4B0894F700EDDB6FF1A762 /* Pods-onboarding_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D11B6C50C861F24000471B2E35A8B751 /* onboarding-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 048DD4319F60D0C80A041AE16227D298 /* onboarding-dummy.m */; };
 		DE7813670AB3D297A6E34DDEAB9CB7D1 /* onboarding-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 20D737E8A8677FB67C4B0767F1E95F3C /* onboarding-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		ED6348347FC63482DDF3840935C7B032 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
 /* End PBXBuildFile section */
@@ -33,14 +33,15 @@
 
 /* Begin PBXFileReference section */
 		048DD4319F60D0C80A041AE16227D298 /* onboarding-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "onboarding-dummy.m"; sourceTree = "<group>"; };
-		07C8ECE21DD09E8E00E2C2A0 /* UIFOnboardingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIFOnboardingViewController.swift; sourceTree = "<group>"; };
 		09788BF4D97108AEB20C6C031C998407 /* Pods-onboarding_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-onboarding_Example-dummy.m"; sourceTree = "<group>"; };
 		131A65031F2081AC6A36DDF6B2598B43 /* Pods-onboarding_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-onboarding_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		20D737E8A8677FB67C4B0767F1E95F3C /* onboarding-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "onboarding-umbrella.h"; sourceTree = "<group>"; };
 		2942195C0BE405653437A1962DB0B763 /* Pods-onboarding_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-onboarding_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		38462852661753723AC69C61C3A8A5F6 /* Pods-onboarding_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-onboarding_Example-umbrella.h"; sourceTree = "<group>"; };
 		384E7A136D3B01CF2A4F4631B4BA9D0C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		400DC7D193FB8FC82E082839E9F4C43D /* UIFOnboardingViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UIFOnboardingViewController.swift; sourceTree = "<group>"; };
 		486498CD05634CF7B799027EF91FAC09 /* Pods-onboarding_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-onboarding_Tests.modulemap"; sourceTree = "<group>"; };
+		5E4BFFC4239A53510F90EEB530C73C29 /* UIFOnboardingView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UIFOnboardingView.swift; sourceTree = "<group>"; };
 		61FBA7F28DCCDE706D85A9A26CA2D5F0 /* Pods-onboarding_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-onboarding_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		6515A6397D5D8FDE3C6529F4C9721A5C /* onboarding-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "onboarding-prefix.pch"; sourceTree = "<group>"; };
 		6CE4ADD1C19A403E77CF0F87B1A55060 /* Pods-onboarding_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-onboarding_Tests-resources.sh"; sourceTree = "<group>"; };
@@ -50,14 +51,13 @@
 		8995AA7D3D2D5F19ABC9E3F9B6461175 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		96B9D654511E69AC78E006227C986681 /* Pods-onboarding_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-onboarding_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		A0787BFD46FE7F02B45E7312EA12F53A /* Color+CustomColor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Color+CustomColor.swift"; sourceTree = "<group>"; };
 		A531884B8306BC8421F5C65B939EBC75 /* onboarding.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = onboarding.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADB3719776F8EED7FFE1D68CA68FA1A8 /* Color+CustomColor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Color+CustomColor.swift"; sourceTree = "<group>"; };
 		B759F2E96F87BB744D1F7DB5B62D92BE /* Pods-onboarding_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-onboarding_Tests-dummy.m"; sourceTree = "<group>"; };
 		B86F60A1D32D0C74FC3841FCD661BEE7 /* Pods-onboarding_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-onboarding_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		BAB68851E8A1C644AF55E3B5542B4770 /* Pods_onboarding_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_onboarding_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB05485722313E67F848740524D498B5 /* Pods-onboarding_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-onboarding_Example.modulemap"; sourceTree = "<group>"; };
 		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		D156903A6863820FEABBDF8557D44DDC /* UIFOnboardingView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UIFOnboardingView.swift; sourceTree = "<group>"; };
 		D163E3D0FD4B0894F700EDDB6FF1A762 /* Pods-onboarding_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-onboarding_Tests-umbrella.h"; sourceTree = "<group>"; };
 		D93380417C3B7BE185301625EF968F75 /* Pods-onboarding_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-onboarding_Example.release.xcconfig"; sourceTree = "<group>"; };
 		DC6FE07B982360D873C981A88D9709D5 /* onboarding.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = onboarding.modulemap; sourceTree = "<group>"; };
@@ -147,6 +147,16 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
+		7C504CAD7D328A34FDA081B129517576 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				ADB3719776F8EED7FFE1D68CA68FA1A8 /* Color+CustomColor.swift */,
+				5E4BFFC4239A53510F90EEB530C73C29 /* UIFOnboardingView.swift */,
+				400DC7D193FB8FC82E082839E9F4C43D /* UIFOnboardingViewController.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
@@ -194,16 +204,6 @@
 			path = "Target Support Files/Pods-onboarding_Example";
 			sourceTree = "<group>";
 		};
-		91F18FA12207509769A01B944E8F19A3 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				07C8ECE21DD09E8E00E2C2A0 /* UIFOnboardingViewController.swift */,
-				D156903A6863820FEABBDF8557D44DDC /* UIFOnboardingView.swift */,
-				A0787BFD46FE7F02B45E7312EA12F53A /* Color+CustomColor.swift */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
 		BAE059FC8EDA5489537B1284EEA0B061 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -223,7 +223,7 @@
 		F95F3B05C744301EE3952FBC06259CB4 /* onboarding */ = {
 			isa = PBXGroup;
 			children = (
-				91F18FA12207509769A01B944E8F19A3 /* Classes */,
+				7C504CAD7D328A34FDA081B129517576 /* Classes */,
 			);
 			path = onboarding;
 			sourceTree = "<group>";
@@ -262,7 +262,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 66B46BC4D06BED2DE598CCEF56FC05E1 /* Build configuration list for PBXNativeTarget "onboarding" */;
 			buildPhases = (
-				105071ED0357C707C2B2D7BF1E30835E /* Sources */,
+				1FB02E3AAD896E7390610A315CD39C7C /* Sources */,
 				72FA5942EBCEB25D3FD4D79DFD6B80EF /* Frameworks */,
 				E50196AA32F42A70AF46158AE770D13A /* Headers */,
 			);
@@ -339,14 +339,14 @@
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		105071ED0357C707C2B2D7BF1E30835E /* Sources */ = {
+		1FB02E3AAD896E7390610A315CD39C7C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0FFE0C35ACEF3FF1C73B4E444D138658 /* Color+CustomColor.swift in Sources */,
-				D11B6C50C861F24000471B2E35A8B751 /* onboarding-dummy.m in Sources */,
-				7A0A54725A7E0A351ADA28865452D3B3 /* UIFOnboardingView.swift in Sources */,
-				07C8ECE31DD09E8E00E2C2A0 /* UIFOnboardingViewController.swift in Sources */,
+				8F42269DC0EABCA89952148C322678D7 /* Color+CustomColor.swift in Sources */,
+				9A022E5BBFA5C04A2AE858616548CF86 /* onboarding-dummy.m in Sources */,
+				88DEF835BF74166441F6408F9831C8CC /* UIFOnboardingView.swift in Sources */,
+				92FC0B970CEC726D80C4D6A02B6B7F87 /* UIFOnboardingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

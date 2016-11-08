@@ -5,17 +5,24 @@
 //  Created by Ranjith Kumar on 07/11/2016.
 //  Copyright © 2016 F22Labs. All rights reserved.
 
-
-public protocol UIFOnboardingViewControllerProtocol:class {
+/**
+ *  The UIFOnboardingViewControllerProtocol is adopted by an object that mediates the application’ rootviewcontroller to UIFOnboadingviewcontroller.
+ */
+@objc public protocol UIFOnboardingViewControllerProtocol:class {
+    /**
+     This func will intimate to application after completing the onboard screens
+     */
     func didFinishInstructions()
 }
 
 public class UIFOnboardingViewController: UIViewController,UIFOnboardingViewProtocol {
 
-    fileprivate  var myView: UIFOnboardingView! { return self.view as! UIFOnboardingView }
     fileprivate var dataSource:[Dictionary<String,String>]?
     fileprivate var statusBarHidden: Bool?
-    public weak var delegate:UIFOnboardingViewControllerProtocol?
+    
+    fileprivate  var myView: UIFOnboardingView! { return self.view as! UIFOnboardingView }
+
+    @objc public weak var delegate:UIFOnboardingViewControllerProtocol?
     
     init() {
         super.init(nibName: nil, bundle: nil)

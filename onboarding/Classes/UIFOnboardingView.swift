@@ -38,74 +38,6 @@ public class UIFOnboardingView: UIView,UIScrollViewDelegate {
         self.createViews()
     }
     
-    @available(iOS 8.2, *)
-    fileprivate func createViews() {
-        self.backgroundColor = .clear
-        
-        self.scrollView = UIScrollView()
-        self.scrollView?.isPagingEnabled = true
-        self.scrollView?.backgroundColor = .white
-        self.scrollView?.delegate = self
-        self.scrollView?.showsHorizontalScrollIndicator = false
-        self.scrollView?.showsVerticalScrollIndicator = false
-        self.scrollView?.bounces = false
-        self.addSubview(self.scrollView!)
-        
-        self.pageControl = UIPageControl()
-        self.pageControl?.pageIndicatorTintColor = UIColor.UIFrgba(fromHex: 0x15B4F1, alpha: 0.2)
-        self.pageControl?.currentPageIndicatorTintColor = UIColor.UIFrgb(fromHex: 0x15B4F1)
-        self.addSubview(self.pageControl!)
-        
-        self.nextButton = UIButton()
-        self.nextButton?.setTitle("NEXT", for: .normal)
-        self.nextButton?.setTitleColor(.white, for: .normal)
-        self.nextButton?.backgroundColor = UIColor.UIFrgb(fromHex: 0x15B4F1)
-        self.nextButton?.titleLabel?.font = UIFont.systemFont(ofSize: 20, weight: UIFontWeightMedium)
-        self.nextButton?.addTarget(self, action: #selector(didTapNextButton), for: .touchUpInside)
-        self.addSubview(self.nextButton!)
-        
-        self.skipButton = UIButton()
-        self.skipButton?.setTitle("Skip", for: .normal)
-        self.skipButton?.setTitleColor(.black, for: .normal)
-        self.skipButton?.layer.cornerRadius = 8.0
-        self.skipButton?.addTarget(self, action: #selector(didTapSkipButton), for: .touchUpInside)
-        self.skipButton?.titleLabel?.font = UIFont.systemFont(ofSize: 20, weight: UIFontWeightLight)
-        self.addSubview(self.skipButton!)
-        
-        for dictionary in self.dataSource! {
-            let imageView = UIImageView()
-            let image = UIImage(named: dictionary["image"]!)
-            imageView.contentMode = .scaleAspectFit
-            imageView.image = image
-            self.imageViewArray.append(imageView)
-            self.scrollView?.addSubview(imageView)
-            
-            let titleLabel = UILabel()
-            titleLabel.text = dictionary["title"]
-            titleLabel.textAlignment = .center
-            titleLabel.numberOfLines = 1
-            if UIScreen.main.bounds.height<600 {
-                titleLabel.font = UIFont.systemFont(ofSize: 18, weight: UIFontWeightRegular)
-            }else {
-                titleLabel.font = UIFont.systemFont(ofSize: 20, weight: UIFontWeightRegular)
-            }
-            titleLabel.textColor = UIColor.UIFrgb(fromHex: 0x424242)
-            self.scrollView?.addSubview(titleLabel)
-            self.titleLabelArray.append(titleLabel)
-            
-            let subTitle = UILabel()
-            subTitle.text = dictionary["subTitle"]
-            subTitle.textAlignment = .center
-            subTitle.numberOfLines = 0
-            subTitle.font = UIFont.systemFont(ofSize: 16, weight: UIFontWeightRegular)
-            subTitle.textColor = UIColor.UIFrgba(fromHex: 0x424242, alpha: 0.55)
-            self.scrollView?.addSubview(subTitle)
-            
-            self.subTitleArray.append(subTitle)
-            
-        }
-    }
-    
    public override func layoutSubviews() {
         super.layoutSubviews()
         var leftInset:CGFloat = 20.0
@@ -156,7 +88,7 @@ public class UIFOnboardingView: UIView,UIScrollViewDelegate {
         
     }
     
-    //MARK:: Selectors
+    //MARK:: Private Functions
     @objc fileprivate func didTapNextButton() {
         if ((self.pageControl?.currentPage)!==self.imageViewArray.count-1) {
             self.delegate?.pushNextScreen()
@@ -178,5 +110,74 @@ public class UIFOnboardingView: UIView,UIScrollViewDelegate {
         self.pageControl?.currentPage = Int(currentPage)
         self.delegate?.pushNextScreen()
     }
+    
+    @available(iOS 8.2, *)
+    fileprivate func createViews() {
+        self.backgroundColor = .clear
+        
+        self.scrollView = UIScrollView()
+        self.scrollView?.isPagingEnabled = true
+        self.scrollView?.backgroundColor = .white
+        self.scrollView?.delegate = self
+        self.scrollView?.showsHorizontalScrollIndicator = false
+        self.scrollView?.showsVerticalScrollIndicator = false
+        self.scrollView?.bounces = false
+        self.addSubview(self.scrollView!)
+        
+        self.pageControl = UIPageControl()
+        self.pageControl?.pageIndicatorTintColor = UIColor.UIFrgba(fromHex: 0x15B4F1, alpha: 0.2)
+        self.pageControl?.currentPageIndicatorTintColor = UIColor.UIFrgb(fromHex: 0x15B4F1)
+        self.addSubview(self.pageControl!)
+        
+        self.nextButton = UIButton()
+        self.nextButton?.setTitle("NEXT", for: .normal)
+        self.nextButton?.setTitleColor(.white, for: .normal)
+        self.nextButton?.backgroundColor = UIColor.UIFrgb(fromHex: 0x15B4F1)
+        self.nextButton?.titleLabel?.font = UIFont.systemFont(ofSize: 20, weight: UIFontWeightMedium)
+        self.nextButton?.addTarget(self, action: #selector(didTapNextButton), for: .touchUpInside)
+        self.addSubview(self.nextButton!)
+        
+        self.skipButton = UIButton()
+        self.skipButton?.setTitle("Skip", for: .normal)
+        self.skipButton?.setTitleColor(.black, for: .normal)
+        self.skipButton?.layer.cornerRadius = 8.0
+        self.skipButton?.addTarget(self, action: #selector(didTapSkipButton), for: .touchUpInside)
+        self.skipButton?.titleLabel?.font = UIFont.systemFont(ofSize: 20, weight: UIFontWeightLight)
+        self.addSubview(self.skipButton!)
+        
+        for dictionary in self.dataSource! {
+            let imageView = UIImageView()
+            let image = UIImage(named: dictionary["imageName"]!)
+            imageView.contentMode = .scaleAspectFit
+            imageView.image = image
+            self.imageViewArray.append(imageView)
+            self.scrollView?.addSubview(imageView)
+            
+            let titleLabel = UILabel()
+            titleLabel.text = dictionary["title"]
+            titleLabel.textAlignment = .center
+            titleLabel.numberOfLines = 1
+            if UIScreen.main.bounds.height<600 {
+                titleLabel.font = UIFont.systemFont(ofSize: 18, weight: UIFontWeightRegular)
+            }else {
+                titleLabel.font = UIFont.systemFont(ofSize: 20, weight: UIFontWeightRegular)
+            }
+            titleLabel.textColor = UIColor.UIFrgb(fromHex: 0x424242)
+            self.scrollView?.addSubview(titleLabel)
+            self.titleLabelArray.append(titleLabel)
+            
+            let subTitle = UILabel()
+            subTitle.text = dictionary["subTitle"]
+            subTitle.textAlignment = .center
+            subTitle.numberOfLines = 0
+            subTitle.font = UIFont.systemFont(ofSize: 16, weight: UIFontWeightRegular)
+            subTitle.textColor = UIColor.UIFrgba(fromHex: 0x424242, alpha: 0.55)
+            self.scrollView?.addSubview(subTitle)
+            
+            self.subTitleArray.append(subTitle)
+            
+        }
+    }
+
     
 }

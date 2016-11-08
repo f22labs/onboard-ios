@@ -1,5 +1,5 @@
 PODS:
-  - onboarding (0.1.0)
+  - onboarding (0.1.4)
 
 DEPENDENCIES:
   - onboarding (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  onboarding: 5972fbdbb9b0286d33df2a681253997a539f63ee
+  onboarding: ef6280c4981f4ab93b84dd1e4f9743f46554be6a
 
 PODFILE CHECKSUM: 0eb1dba6dc8fb36926149ca884a4547c0f66731b
 

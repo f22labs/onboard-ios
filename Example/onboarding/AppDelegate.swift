@@ -19,13 +19,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate,UIFOnboardingViewControlle
             self.window = UIWindow()
         }
         var dictionary = [Dictionary<String,String>]()
-           dictionary = [["image":"illustrationScreen-1",
+           dictionary = [["imageName":"illustrationScreen-1",
          "title":"SIMPLE ABROAD CALLS",
          "subTitle":"Wonep converts international calls to local calls"],
-         ["image":"illustrationScreen-2",
+         ["imageName":"illustrationScreen-2",
          "title":"FREE WONEP TO WONEP",
          "subTitle":"if the person you're calling also has Wonep the call will be entirely free"],
-         ["image":"iIllustrationScreen-3",
+         ["imageName":"iIllustrationScreen-3",
          "title":"NO HIDDEN CHARGES OR FEES",
          "subTitle":"We have a very small charge for non-Wonep calls to mobiles or landlines"]]
         
