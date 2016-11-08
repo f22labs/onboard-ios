@@ -22,7 +22,7 @@ pod "onboarding"
 
 ## Author
 
-ranjithatF22Labs, ranjith@f22labs.com
+ranjith@f22labs.com
 
 ## License
 

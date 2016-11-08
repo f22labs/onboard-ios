@@ -10,10 +10,9 @@ import UIKit
 import onboarding
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate,F22InstructorSceneProtocol {
+class AppDelegate: UIResponder, UIApplicationDelegate,UIFOnboardingViewControllerProtocol {
 
     var window: UIWindow?
-
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         if(self.window == nil) {
@@ -30,14 +29,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate,F22InstructorSceneProtocol
          "title":"NO HIDDEN CHARGES OR FEES",
          "subTitle":"We have a very small charge for non-Wonep calls to mobiles or landlines"]]
         
-        let loginViewController = LoginViewController()
-        
-        let instructorVC = F22InstructorScene.init(inputViews: dictionary, nextViewController:loginViewController,hideStatusBar:true)
-        
-        let navigationController = UINavigationController.init(rootViewController: instructorVC)
+        let onboardingVC = UIFOnboardingViewController.init(dataSource:dictionary, hideStatusBar: true)
+        onboardingVC.delegate = self
+        let navigationController = UINavigationController.init(rootViewController: onboardingVC)
         self.window?.backgroundColor = .white
         self.window?.rootViewController = navigationController
-        navigationController.setNavigationBarHidden(true, animated: false)
         self.window?.makeKeyAndVisible()
         return true
     }
@@ -67,7 +63,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate,F22InstructorSceneProtocol
 
     
     //MARK:: F22InstructorSceneProtocol functions
-    func didFinishInstructions() {}
+    func didFinishInstructions() {
+        let loginViewController = LoginViewController()
+        self.window?.rootViewController?.show(loginViewController, sender: self)
+    }
 
 }
 

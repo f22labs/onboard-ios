@@ -8,7 +8,7 @@
 
 public extension UIColor {
     
-    public class func F22rgb(fromHex: Int) -> UIColor {
+    public class func UIFrgb(fromHex: Int) -> UIColor {
         let red =   CGFloat((fromHex & 0xFF0000) >> 16) / 0xFF
         let green = CGFloat((fromHex & 0x00FF00) >> 8) / 0xFF
         let blue =  CGFloat(fromHex & 0x0000FF) / 0xFF
@@ -17,7 +17,7 @@ public extension UIColor {
         return UIColor(red: red, green: green, blue: blue, alpha: alpha)
     }
     
-   public class func F22rgba(fromHex: Int, alpha: CGFloat) -> UIColor {
+   public class func UIFrgba(fromHex: Int, alpha: CGFloat) -> UIColor {
         let red =   CGFloat((fromHex & 0xFF0000) >> 16) / 0xFF
         let green = CGFloat((fromHex & 0x00FF00) >> 8) / 0xFF
         let blue =  CGFloat(fromHex & 0x0000FF) / 0xFF

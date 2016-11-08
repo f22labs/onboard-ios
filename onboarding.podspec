@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
 s.name             = 'onboarding'
-s.version          = '0.1.0'
-s.summary          = 'Displaying an Instructor pages when first time users enter into your Application.'
+s.version          = '0.1.2'
+s.summary          = 'Displaying an onboarding screens'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -17,14 +17,14 @@ s.summary          = 'Displaying an Instructor pages when first time users enter
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
-s.description      = 'Displaying an Instructor pages when first time users enter into your Application. It will give some basic idea of our Applicaton Flow'
+s.description      = 'Showing an onboarding screens when first time users enter into your Application. Primarily, This will show off your Applicaton Flow'
 
 s.homepage         = 'https://github.com/f22labs/onboard-ios'
 # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
 s.license          = { :type => 'MIT', :file => 'LICENSE' }
 s.author           = { 'Developer:' => 'ranjith@f22labs.com' }
 s.source           = { :git => 'https://github.com/f22labs/onboard-ios.git', :tag => s.version.to_s }
-# s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+# s.social_media_url = 'https://twitter.com/f22labs'
 
 s.ios.deployment_target = '8.0'
 

@@ -1,35 +1,30 @@
 //
-//  F22InstructorScene.swift
+//  UIFOnboardingViewController.swift
 //  Pods
 //
 //  Created by Ranjith Kumar on 07/11/2016.
 //  Copyright © 2016 F22Labs. All rights reserved.
 
 
-import UIKit
-
-public protocol F22InstructorSceneProtocol:class {
+public protocol UIFOnboardingViewControllerProtocol:class {
     func didFinishInstructions()
 }
 
-public class F22InstructorScene: UIViewController,F22onBoardingViewProtocol {
+public class UIFOnboardingViewController: UIViewController,UIFOnboardingViewProtocol {
 
-    var myView: F22onBoardingView! { return self.view as! F22onBoardingView }
-    
-    var inputViews:[Dictionary<String,String>]?
-    var nextViewController:UIViewController?
-    var statusBarHidden: Bool?
-    weak var delegate:F22InstructorSceneProtocol?
+    fileprivate  var myView: UIFOnboardingView! { return self.view as! UIFOnboardingView }
+    fileprivate var dataSource:[Dictionary<String,String>]?
+    fileprivate var statusBarHidden: Bool?
+    public weak var delegate:UIFOnboardingViewControllerProtocol?
     
     init() {
         super.init(nibName: nil, bundle: nil)
     }
     
-    public convenience init(inputViews:[Dictionary<String,String>],nextViewController:UIViewController,hideStatusBar:Bool) {
+    public convenience init(dataSource:[Dictionary<String,String>],hideStatusBar:Bool) {
     self.init()
         if #available(iOS 8.2, *) {
-            self.nextViewController = nextViewController
-            self.inputViews = inputViews
+            self.dataSource = dataSource
             self.statusBarHidden = hideStatusBar
         } else {
             // Fallback on earlier versions
@@ -39,9 +34,10 @@ public class F22InstructorScene: UIViewController,F22onBoardingViewProtocol {
     override public func loadView() {
         super.loadView()
         if #available(iOS 8.2, *) {
-            view = F22onBoardingView.init(inputViews:self.inputViews!)
+            view = UIFOnboardingView.init(dataSource:dataSource!)
             self.myView.delegate = self
             self.edgesForExtendedLayout = []
+            self.navigationController?.navigationBar.isHidden = true
         } else {
             // Fallback on earlier versions
         }
@@ -59,10 +55,14 @@ public class F22InstructorScene: UIViewController,F22onBoardingViewProtocol {
     override public var prefersStatusBarHidden: Bool {
         return self.statusBarHidden!
     }
+    
+    override public func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        self.navigationController?.navigationBar.isHidden = false
+    }
 
-    // MARK:: F22InstructorSceneProtocol Protocol Functions
+    // MARK:: UIFOnboardingViewControllerProtocol Functions
     public func pushNextScreen() {
-        self.navigationController?.viewControllers = [self.nextViewController!]
         self.delegate?.didFinishInstructions()
     }
 }
