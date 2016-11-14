@@ -10,7 +10,7 @@ public protocol UIFOnboardingViewProtocol:class {
     func pushNextScreen()
 }
 
-public class UIFOnboardingView: UIView,UIScrollViewDelegate {
+open class UIFOnboardingView: UIView,UIScrollViewDelegate {
     
    fileprivate var dataSource:[[String:String]]?
    fileprivate var scrollView:UIScrollView?
@@ -21,7 +21,7 @@ public class UIFOnboardingView: UIView,UIScrollViewDelegate {
    fileprivate var titleLabelArray = [UILabel]()
    fileprivate var subTitleArray = [UILabel]()
     
-   public weak var delegate:UIFOnboardingViewProtocol?
+   open weak var delegate:UIFOnboardingViewProtocol?
     
     public override init(frame:CGRect) {
         super.init(frame:frame)
@@ -38,7 +38,7 @@ public class UIFOnboardingView: UIView,UIScrollViewDelegate {
         self.createViews()
     }
     
-   public override func layoutSubviews() {
+   open override func layoutSubviews() {
         super.layoutSubviews()
         var leftInset:CGFloat = 20.0
         let padding:CGFloat = 20.0
@@ -81,7 +81,7 @@ public class UIFOnboardingView: UIView,UIScrollViewDelegate {
     }
     
     //MARK:: UIScrollView Delegates
-    public func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+    open func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
         let pageWidth = scrollView.frame.width
         let nextPage = floor(scrollView.contentOffset.x - pageWidth / 2) / pageWidth + 1
         self.pageControl?.currentPage = Int(nextPage)
@@ -125,14 +125,14 @@ public class UIFOnboardingView: UIView,UIScrollViewDelegate {
         self.addSubview(self.scrollView!)
         
         self.pageControl = UIPageControl()
-        self.pageControl?.pageIndicatorTintColor = UIColor.UIFrgba(fromHex: 0x15B4F1, alpha: 0.2)
-        self.pageControl?.currentPageIndicatorTintColor = UIColor.UIFrgb(fromHex: 0x15B4F1)
+        self.pageControl?.pageIndicatorTintColor = UIColor.UIFrgba(0x15B4F1, alpha: 0.2)
+        self.pageControl?.currentPageIndicatorTintColor = UIColor.UIFrgb(0x15B4F1)
         self.addSubview(self.pageControl!)
         
         self.nextButton = UIButton()
         self.nextButton?.setTitle("NEXT", for: .normal)
         self.nextButton?.setTitleColor(.white, for: .normal)
-        self.nextButton?.backgroundColor = UIColor.UIFrgb(fromHex: 0x15B4F1)
+        self.nextButton?.backgroundColor = UIColor.UIFrgb(0x15B4F1)
         self.nextButton?.titleLabel?.font = UIFont.systemFont(ofSize: 20, weight: UIFontWeightMedium)
         self.nextButton?.addTarget(self, action: #selector(didTapNextButton), for: .touchUpInside)
         self.addSubview(self.nextButton!)
@@ -162,7 +162,7 @@ public class UIFOnboardingView: UIView,UIScrollViewDelegate {
             }else {
                 titleLabel.font = UIFont.systemFont(ofSize: 20, weight: UIFontWeightRegular)
             }
-            titleLabel.textColor = UIColor.UIFrgb(fromHex: 0x424242)
+            titleLabel.textColor = UIColor.UIFrgb(0x424242)
             self.scrollView?.addSubview(titleLabel)
             self.titleLabelArray.append(titleLabel)
             
@@ -171,7 +171,7 @@ public class UIFOnboardingView: UIView,UIScrollViewDelegate {
             subTitle.textAlignment = .center
             subTitle.numberOfLines = 0
             subTitle.font = UIFont.systemFont(ofSize: 16, weight: UIFontWeightRegular)
-            subTitle.textColor = UIColor.UIFrgba(fromHex: 0x424242, alpha: 0.55)
+            subTitle.textColor = UIColor.UIFrgba(0x424242, alpha: 0.55)
             self.scrollView?.addSubview(subTitle)
             
             self.subTitleArray.append(subTitle)

@@ -15,14 +15,14 @@
     func didFinishInstructions()
 }
 
-public class UIFOnboardingViewController: UIViewController,UIFOnboardingViewProtocol {
+open class UIFOnboardingViewController: UIViewController,UIFOnboardingViewProtocol {
 
     fileprivate var dataSource:[Dictionary<String,String>]?
     fileprivate var statusBarHidden: Bool?
     
     fileprivate  var myView: UIFOnboardingView! { return self.view as! UIFOnboardingView }
 
-    @objc public weak var delegate:UIFOnboardingViewControllerProtocol?
+    @objc open weak var delegate:UIFOnboardingViewControllerProtocol?
     
     init() {
         super.init(nibName: nil, bundle: nil)
@@ -38,7 +38,7 @@ public class UIFOnboardingViewController: UIViewController,UIFOnboardingViewProt
         }
     }
     
-    override public func loadView() {
+    override open func loadView() {
         super.loadView()
         if #available(iOS 8.2, *) {
             view = UIFOnboardingView.init(dataSource:dataSource!)
@@ -54,22 +54,22 @@ public class UIFOnboardingViewController: UIViewController,UIFOnboardingViewProt
         fatalError("init(coder:) has not been implemented")
     }
 
-    override public func didReceiveMemoryWarning() {
+    override open func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-    override public var prefersStatusBarHidden: Bool {
+    override open var prefersStatusBarHidden: Bool {
         return self.statusBarHidden!
     }
     
-    override public func viewWillDisappear(_ animated: Bool) {
+    override open func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         self.navigationController?.navigationBar.isHidden = false
     }
 
     // MARK:: UIFOnboardingViewControllerProtocol Functions
-    public func pushNextScreen() {
+    open func pushNextScreen() {
         self.delegate?.didFinishInstructions()
     }
 }
